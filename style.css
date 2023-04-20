@@ -300,6 +300,10 @@ center{
         height: 250px;
         border-radius: 5px;
       }
+      .friends{
+        width:200px ;
+        height:450px ;
+      }
 
   }
   
