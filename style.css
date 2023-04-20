@@ -1,0 +1,315 @@
+/* nav */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+   
+  }
+  
+  .topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all  1s;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    transform: scale(1.1);
+    border-radius: 5px;
+  }
+  
+  .topnav a.active {
+   
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+/* sticky social */
+
+.icon-bar {
+    float: left;
+    position: fixed;
+    top: 60%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .whatsapp {
+    background: #00f165;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .instagram {
+    background: #af1b1b;
+    color: white;
+  }
+  
+ .github {
+    background: #111111;
+    color: white;
+  }
+
+/* contents */
+
+* {
+    box-sizing:border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'work san', sans-serif;
+    background-color:black ;
+  }
+  
+  .container {
+    padding: 64px;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
+  .column-66 {
+    float: left;
+    width: 60%;
+    padding: 20px;
+  }
+  
+  .column-33 {
+    float: left;
+    width: 30%;
+    padding: 20px;
+  }
+
+  .hero{
+    align-items: center;
+  }
+  
+  .large-font {
+    font-size: 48px;
+  }
+  
+  .xlarge-font {
+    font-size: 64px
+  }
+  
+  .button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);;
+    border-radius: 5px;
+    transition:all 1s;
+  }
+
+  .button:hover{
+    transform: scale(1.1);
+    color: #dddb;
+  }
+  
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+
+
+
+/* project */
+center{
+    margin:5% 0%;
+}
+
+  .row3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .img-proj{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+  }
+  .column-333 {
+   
+    padding: 20px;
+  }
+
+  
+
+
+
+  .contain {
+    margin: 20px;
+    position: relative;
+    
+  }
+  
+  .image {
+    display: block;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #2e4046;
+  }
+  
+  .contain:hover .overlay {
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 5px;
+    
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:rgb(255, 255, 255) ;
+    
+  }
+  .links:hover{
+    color: #2e4046;
+  }
+  .links{
+    text-decoration: none;
+    margin-right:5% ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgb(184, 145, 49);
+  }
+
+/* ends */
+
+
+/* my pics */
+.frnd{
+	margin-top: 2%;
+	font-family: fantasy;
+	font-size: 3em;
+	text-align: center;
+	color: rgb(189, 174, 44);
+	}
+
+.sec{
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+
+}
+.friends{
+    width: 450px;
+	height:600px;
+	margin: 10px;
+	transition: all 1s;
+    border-radius: 10px;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+}
+.friends:hover{
+    transform: scale(1.5);
+}
+
+
+  @media screen and (max-width: 320px) {
+    .container {
+        padding: 20px;
+      }
+    .flex-container{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        
+    } 
+
+    .img-proj{
+        width: 250px;
+        height: 250px;
+        border-radius: 5px;
+      }
+
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      margin: auto;
+    }
+  }

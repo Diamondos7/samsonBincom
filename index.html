@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#contact">Contact</a>
+  <a href="#project">Projects</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+ <marquee> <p style="color: white;">Hello there, you are welcome to my portfolio🖐</p></marquee>
+
+  
+
+
+ <!-- icons social-->
+ <div class="icon-bar">
+    <a href="https://www.linkedin.com/in/ododo-samson-952776227" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/Diamondos7" class="github"><i class="fa fa-github"></i></a>
+    <a href="https://twitter.com/ododo_samson?t=xavDgfHdgPurRFJ8qNgaGQ&s=09" class="twitter"><i class="ion-social-twitter" class="twitter"><i class="fa fa-twitter"></i></a> 
+    <a href="https://instagram.com/diamond.o.s?igshid=ZDdkNTZiNTM=" class="instagram"><i class="fa fa-instagram"></i></a> 
+    <a href="https://wa.me/qr/7XQNTG7U37K7E1" class="whatsapp"><i class="fa fa-whatsapp"></i></a> 
+
+          
+  </div>
+
+  <!-- home Section -->
+  <div class="container" id="Home">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font hero" style="color: white;"><b>I'm Ododo  Samson</b></h1>
+        <h1 class="large-font hero" style="color:rgb(255, 0, 0);"><b>Diamond</b></h1>
+       
+        <button class="button hero"><a style="text-decoration: none; color: white;" href="#projects"> Projects</a></button>
+      </div>
+      <div class="column-33">
+          <!-- <img src="mee.jpg" width="335" height="471"> -->
+      </div>
+    </div>
+  </div>
+  
+  <!-- Clarity Section -->
+  <div class="container" id="about" style="background-color:#f1f1f1">
+    <div class="row">
+      <div class="column-33">
+        <img src="mee.jpg" width="335" height="471">
+      </div>
+      <div class="column-66">
+        <h4 style="font-weight: 400px; line-height: 30px; color: #f1f1f1;"><span style="font-size:36px">Hello there! 👋</span>  My name is Diamond O.Samson, and I'm a frontend web developer who is passionate about crafting digital products that are both beautiful
+            and user-friendly. I believe that websites and applications shouldn't just function well,
+             but also make everyday life more enjoyable and effortless for their users.</h4>
+        <button class="button" style="background-color:red">Read More</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- The project Section -->
+  
+
+  <div class="container-proj" id="project" >
+    <center> <h1 style="color: rgb(182, 146, 54);">MY PROJECTS</h1></center> 
+        <div class="row3">
+                    <div class="column-333 contain">
+                            <img src="avatarcol.jpg" alt="Avatar" class="image img-proj">
+                                <a class="links" href="https://nftavatar.netlify.app"> NFT-avatar collection display </a>
+                            <div class="overlay">
+                            <div class="text">This is an nft avatar collection,displaying its individual unique properties.</div>
+                            </div>
+                    </div>
+                    
+                    <div class="column-333 contain">
+                            <img src="check.jpg" alt="Avatar" class="image img-proj">
+                                <a class="links" href="https://check-list1.netlify.app"> Task-manager checklist </a>
+                            <div class="overlay">
+                            <div class="text">Check-list allows you create a list things to do at a specific time.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="column-333 contain">
+                            <img src="board.png" alt="Avatar" class="image img-proj">
+                                <a class="links" href="https://score-board1.netlify.app">Score-display board </a>
+                            <div class="overlay">
+                            <div class="text">This is a scoreboard web app thats diplays individual participants scores</div>
+                            </div>
+                    </div>
+        </div>
+  </div>
+
+
+  <section >
+    <h1 class="frnd" >MINI GALLERY </h1>
+    <div class="sec">
+            <div>
+                <img src="img1.jpg" alt="img1" class="friends">
+                <img src="img2.jpg" alt="img1" class="friends">
+                <img src="img3.jpg" alt="img1" class="friends">
+                <img src="img4.jpg" alt="img1" class="friends">
+                <img src="img5.jpg" alt="img1" class="friends">
+                <img src="img6.jpg" alt="img1" class="friends">
+                <img src="img7.jpg" alt="img1" class="friends">
+            </div>
+    </div>
+  </section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<!-- 
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    /* Style for the text elements */
+    .animated-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3em;
+      font-family: Arial, sans-serif;
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="text-container">
+    <div class="animated-text" id="text1"></div>
+    <div class="animated-text" id="text2"></div>
+    <div class="animated-text" id="text3"></div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      // Define the animation sequence
+      function animateText() {
+        var $text1 = $('#text1');
+        var $text2 = $('#text2');
+        var $text3 = $('#text3');
+
+        var text1Content = "Hello, I'm a web developer.";
+        var text2Content = "I specialize in front-end development.";
+        var text3Content = "Check out my portfolio below!";
+
+        // Clear the previous text content
+        $text1.text("");
+        $text2.text("");
+        $text3.text("");
+
+        // Display the first text element
+        $text1.animate({opacity: 1}, 2000, function() {
+          // Display the text alphabet by alphabet
+          var i = 0;
+          var textInterval = setInterval(function() {
+            if (i < text1Content.length) {
+              var letter = text1Content.charAt(i);
+              $text1.append(letter);
+              i++;
+            } else {
+              clearInterval(textInterval);
+              // Fade out the text element
+              $text1.animate({opacity: 0}, 2000, function() {
+                // Call the next text element
+                $text2.animate({opacity: 1}, 2000, function() {
+                  var j = 0;
+                  var textInterval2 = setInterval(function() {
+                    if (j < text2Content.length) {
+                      var letter2 = text2Content.charAt(j);
+                      $text2.append(letter2);
+                      j++;
+                    } else {
+                      clearInterval(textInterval2);
+                      $text2.animate({opacity: 0}, 2000, function() {
+                        $text3.animate({opacity: 1}, 2000, function() {
+                          var k = 0;
+                          var textInterval3 = setInterval(function() {
+                            if (k < text3Content.length) {
+                              var letter3 = text3Content.charAt(k);
+                              $text3.append(letter3);
+                              k++;
+                            } else {
+                              clearInterval(textInterval3);
+                              $text3.animate({opacity: 0}, 2000, function() {
+                                // Call the function again to loop the animation
+                                animateText();
+                              });
+                            }
+                          }, 100);
+                        });
+                      });
+                    }
+                  }, 100);
+                });
+              });
+            }
+          }, 100);
+        });
+      }
+
+      // Call the animateText function at the start
+      animateText();
+    });
+  </script>
+</body>
+</html>
+
+ -->
