@@ -358,6 +358,7 @@ center{
     opacity: 0.8;
     cursor: pointer;
     border-radius: 5px;
+   
     
   }
   
@@ -484,6 +485,17 @@ center{
       .foot {
         font: size 10px; 
       }
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 250px;
+        width: 250px;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #2e4046;
+      }
+      
       
     
   }
